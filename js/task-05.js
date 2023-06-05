@@ -1,9 +1,9 @@
 const nameOutput = document.querySelector("#name-output");
 const nameInput = document.querySelector("#name-input");
 
-nameInput.addEventListener("input", InputChange);
+nameInput.addEventListener("input", inputChange);
 
-function InputChange(event) {
+function inputChange(event) {
     if (event.currentTarget.value !== "") {
         return nameOutput.textContent = event.currentTarget.value;
     }
